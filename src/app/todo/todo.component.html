@@ -1,5 +1,7 @@
-<div class="col-sm-6 col-sm-offset-3">
+<div>
   <h2>Todo</h2>
+  <span>{{remaining}} of {{todos.length}} remaining</span> [ <a (click)="archive()">archive</a> ]
+
   <todo-list [todos]="todos"></todo-list>
   <todo-form (newTodo)="addTodo($event)"></todo-form>
 </div>

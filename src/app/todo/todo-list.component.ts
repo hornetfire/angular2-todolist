@@ -12,6 +12,7 @@ import { Todo } from './todo.module';
   template: `
     <ul class="list-unstyled">
       <li *ngFor="let todo of todos" >        
+        <input *ngIf="!todo.archived" type="checkbox" [(ngModel)]="todo.done">
         <span class="done-{{todo.done}}">{{todo.text}}</span>
       </li>
     </ul>
