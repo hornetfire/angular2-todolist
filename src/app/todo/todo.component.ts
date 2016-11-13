@@ -12,5 +12,10 @@ export class TodoComponent {
     todos: Todo[] = [
         { text: 'learn angular', done: true },
         { text: 'build an angular app', done: false }
-    ]
+        { text: 'Y\'all need to see this', done: false }
+    ];
+
+    addTodo(task: Todo) {
+        this.todos.push(task);
+    }
 }

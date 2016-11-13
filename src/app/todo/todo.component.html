@@ -1,3 +1,5 @@
-<div>
+<div class="col-sm-6 col-sm-offset-3">
   <h2>Todo</h2>
+  <todo-list [todos]="todos"></todo-list>
+  <todo-form (newTodo)="addTodo($event)"></todo-form>
 </div>
