@@ -9,13 +9,17 @@ import { Component } from '@angular/core';
                 <div class="navbar-header">
                 <a class="navbar-brand" href="/">FireBootCamp Angular - Todo</a>
                 </div>
+                <ul class="nav navbar-nav">
+                    <li> <a [routerLink]="['/']">Todos</a></li>
+                    <li> <a [routerLink]="['/todoArchive']">Todo Archive</a></li>
+                </ul>
             </div>
         </nav>
         <div class="container">
-            <todo></todo>
+            <router-outlet></router-outlet>
         </div>
-    `
-    templateUrl: './app.component.html',
+    `,
+    // templateUrl: './app.component.html',
     styleUrls: []
 })
 export class AppComponent { }
